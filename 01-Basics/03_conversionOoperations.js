@@ -14,5 +14,4 @@ console.log(valueInNumber)
 let isLoggedin = 1
 let booleanIsLoggedIn = Boolean(isLoggedin)
 console.log(booleanIsLoggedIn);
-
-number can also be converted to boolean
+//number can also be converted to boolean
