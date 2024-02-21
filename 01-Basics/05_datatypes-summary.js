@@ -29,3 +29,29 @@ const MyFunction= function(){
 //to check datatype of anything.
 
 console.log(typeof MyFunction)
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack(Primitive)-> Copy of the original value , heap(non-primitive)-> Reference (Value will change)
+
+let myYoutubename="Dhruv krishna"
+
+let anothername= myYoutubename 
+anothername = "Dhruv"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+//Taking a non Primitive Datatype 
+let userOne={
+    email:"Dhruvkrishn@gmail.com",
+    upi:"dhruv@paytm"
+}
+//Creating userTwo which is equal to userone and Changing the value of email for this user 
+let usertwo = userOne
+usertwo.email="Dhruv@gmail"
+//The value is by reference  and the original value will change.
+console.log(userOne.email);
+console.log(usertwo.email);
+
