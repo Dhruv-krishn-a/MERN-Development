@@ -31,3 +31,31 @@ function loginMessage(username){
 }
 console.log(loginMessage()) //if we dont pass anything it will be undefined.
 
+
+//Passing Multiple values in cart.(Important)
+function calculateCartPrice(...num1){ //rest operator, make a bundal of Arguments 
+    return num1
+}
+console.log(calculateCartPrice(200,400,600))// give items in cart
+
+
+const user = {
+    username: "Dhruv",
+    price: 199
+}
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and the price is ${anyObject.price}`);
+}
+
+//handleObject(user)   By this we dont know if the value is modified or not.
+
+handleObject({
+username: "Dhruv",
+price: "399"
+})
+
+const myNewArray = [200,300,400,500]
+function returnsecondValue(getarray){
+    return getarray[1] 
+}
+
