@@ -55,4 +55,4 @@ class animal{
 let dog1=new animal("doggy", 5 , "bhow bhow")//create objects 
 let cat1=new animal("car", 4 , "aaaaggghhhh")
 cat1.speak()
-console.log(animal.scream())
+animal.scream()
