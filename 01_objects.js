@@ -56,3 +56,35 @@ let dog1=new animal("doggy", 5 , "bhow bhow")//create objects
 let cat1=new animal("car", 4 , "aaaaggghhhh")
 cat1.speak()
 animal.scream()
+
+// Object Methods Explanation
+function objectMethods(obj) {
+    console. log( "Original Object:", obj);
+
+    let keys = Object.keys(obj)
+    console.log( "After Object.keys(): ", keys)
+
+     let values = Object.values(obj)
+     console. log( "After Object.values():", values)
+
+    let entries = Object.entries(obj)
+    console. log( "After Object.entries():", entries)
+
+    let hasProp =Object.hasOwnProperty("Property")
+    console. log( "After has0wnProperty():", hasProp)
+
+    let newObj = Object.assign({}, obj, { newProperty: "newValue"
+   });
+     console. log( "After Object.assign():", newObj);
+}
+const obj ={
+  Name: "Dhruv",
+  Age: 23,
+  city: "agra",
+  state: "UP",
+  college: "HCST ,Mathura",
+  course: "B.Tech",
+  stream: "CSE"
+};
+
+objectMethods(obj)
