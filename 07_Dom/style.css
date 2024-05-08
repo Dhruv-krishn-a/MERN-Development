@@ -1,0 +1,14 @@
+* {
+    background-color: #333333;
+    color: white;
+}
+
+#heading1 {
+    color: red;
+}
+#heading2 {
+    color: beige;
+}
+.class1{
+    color: bisque;
+}
