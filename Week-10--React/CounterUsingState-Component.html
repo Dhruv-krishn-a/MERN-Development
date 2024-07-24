@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ButtonParent"> </div>
+    <script>
+        // Here the initial state of the counter is defined. 
+        let state = {
+            count : 1
+        }
+        // Function definiton 
+        function onButtonPress(){
+            state.count++;
+            buttonComponentRerender()
+        }
+        // Function definition 
+        function buttonComponentRerender(){
+            //This will clear the div ,and then add a new button component , with the initial state .
+            document.getElementById("ButtonParent").innerHTML = "";
+            //this will call the function button component with passing initial state as variable .
+            const component = buttonComponent(state.count)
+            // This will append the new counter to the empty div .
+            document.getElementById("ButtonParent").appendChild(component)
+        }
+        // function definition
+        function buttonComponent(count){
+            //Here our button is defined and We will have to write this part in react .
+            const button = document.createElement("button")
+            button.innerHTML = `Counter ${count}`
+            button.setAttribute("onclick","onButtonPress()")
+            return button;
+        }
+        //This is calling the re-render function , which will render the component for the first time, since we are not using react yet , we have to do it manually .
+        buttonComponentRerender();
+    </script>
+</body>
+</html>
