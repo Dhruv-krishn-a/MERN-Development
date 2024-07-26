@@ -14,7 +14,12 @@ console.log("this is new node project ")
 
 //to use this module -->
 //IMPORT HERE ,EXPORT from created file 
-const math = require("./add-module");
+const newvar = require('./1-ExportModule');
 
 //USE this module 
-console.log(math(5,10));
+console.log(newvar(30,50));
+
+const MultipleObject = require('./1-ExportModule');
+console.log(MultipleObject)
+console.log(MultipleObject.multiply(5,5));
+console.log(MultipleObject.PI)
