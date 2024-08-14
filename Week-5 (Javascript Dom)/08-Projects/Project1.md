@@ -1,2 +1,0 @@
-# projects related to DOm
-

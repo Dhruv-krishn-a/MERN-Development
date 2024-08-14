@@ -11,7 +11,7 @@ function App() {
   const [todos, settodos] = useState([{
     title:"Study task-1",
     description:"Study WEB",
-    completed:"
+    completed:"True "
   },
   {
     title:"Study task-2",
