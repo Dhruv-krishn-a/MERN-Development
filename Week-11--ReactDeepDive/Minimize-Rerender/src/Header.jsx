@@ -27,10 +27,10 @@ return (
 )
 }
 
-const Header2 = React.memo(function ({title}){
+function header2({title}){
     return (
         <div>
             {title}
         </div>
     )
-})
+}

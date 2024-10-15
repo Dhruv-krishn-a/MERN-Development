@@ -1,6 +1,6 @@
 import './App.css'
 import Headerwithbutton,{Header} from './Header'
-
+import Card from './Wrapper'
 
 
 function App() {
@@ -8,7 +8,10 @@ function App() {
   return (
     <>
       <Headerwithbutton/>
+      <br />
       <Header title="My name is Dhruv"/>
+      <br />
+      <Card/>
     </>
   )
 }
